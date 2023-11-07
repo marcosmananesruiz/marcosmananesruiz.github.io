@@ -1,29 +1,87 @@
 body {
-  background-color:firebrick;
+  background-image: url(/img/red-background-6972418_1280.png);
+  background-size: cover;
   color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-a {
+a.boton {
   margin: 0% 5%;
+  animation-name: textZoomOut;
+  animation-duration: 500ms;
 }
-a:link:hover {
+a.boton:link:hover {
+  animation-name: textZoomIn;
+  animation-duration: 500ms;
   background-color: white;
   color: firebrick;
   text-decoration: underline;
+  border-radius: 5%;
+  font-size: larger;
 }
-a:link {
+@keyframes textZoomIn {
+  from {
+    font-size: medium;
+  }
+  to {
+    font-size: larger;
+  }
+}
+@keyframes textZoomOut {
+  from {
+    font-size: larger;
+  }
+  to {
+    font-size: medium;
+  }
+}
+a.boton:link {
   color: white;
   text-decoration: none;
 }
-a:visited {
+a.boton:visited {
   color: white;
-  text-decoration: none;
 }
-a:visited:hover {
+a.boton:visited:hover {
   background-color: white;
   color: firebrick;
   text-decoration: underline;
+  border-radius: 5%;
 }
 p {
   text-align: center;
+}
+.imagen {
+  float: left;
+  width: 64px;
+  height: 64px;
+  animation-name: imgZoomOut;
+  animation-duration: 500s;
+
+}
+.imagen:hover {
+  float: left;
+  height: 96px;
+  width: 96px;
+  animation-name: imgZoomIn;
+  animation-duration: 500ms;
+}
+@keyframes imgZoomIn {
+  from {
+    height: 64px;
+    width: 64px;
+  }
+  to {
+    height: 96px;
+    width: 96px;
+  }
+}
+@keyframes imgZoomOut {
+  from {
+    height: 96px;
+    width: 96px;
+  }
+  to {
+    height: 64px;
+    width: 64px;
+  }
 }

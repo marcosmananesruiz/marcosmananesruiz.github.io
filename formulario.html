@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilosFormulario.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>¿Quien unirse al equipo?</h1>
+  <h3>Rellena el siguiente formulario</h3>
+  <form action="get">
+    <fieldset>
+      <legend align="center">Personal</legend>
+      <p>
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre">
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" id="apellidos">
+      </p>
+      <p>
+        <label for="edad">Fecha de Nacimiento: </label>
+        <input type="date" id="edad">
+      </p>
+      <p>Estado Civil:</p>
+      <p>
+        <label for="casado">Casado: </label>
+        <input type="radio" name="Estado" id="casado">
+        <label for="soltero">Soltero: </label>
+        <input type="radio" name="Estado" id="soltero">
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend align="center">Profesional y Estudios</legend>
+      <p>
+        <label for="estudios">Titulo Academico más alto</label>
+        <select id="estudios">
+          <option value="null" selected> </option>
+          <option value="eso">E.S.O.</option>
+          <option value="fpb">F.P. Basica</option>
+          <option value="fpm">F.P. Grado Medio</option>
+          <option value="bach">Bachillerato</option>
+          <option value="fps">F.P. Grado Superior</option>
+          <option value="uni">Carrera Universitaria</option>
+          <option value="master">Master</option>
+          <option value="doctor">Doctorado</option>
+        </select>
+      </p>
+      <p>
+        <label for="estudios2"></label>
+      </p>
+    </fieldset>
+  </form>
+  
+</body>
+</html>
