@@ -1,56 +1,92 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/estilosFormulario.css">
-  <title>Document</title>
+  <title>Proyecto Marcos Mañanes 2ºSMRC AW - Formulario</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <h1>¿Quien unirse al equipo?</h1>
-  <h3>Rellena el siguiente formulario</h3>
-  <form action="get">
-    <fieldset>
-      <legend align="center">Personal</legend>
+  <header>
+    <nav>
       <p>
-        <label for="nombre">Nombre: </label>
-        <input type="text" id="nombre">
-        <label for="apellidos">Apellidos: </label>
-        <input type="text" id="apellidos">
+        <a class="boton" href="index.html">Pagina Principal</a>
+        <a class="boton" href="curriculum.html" target="center">Curriculum</a>
+        <a class="boton" href="personal.html" target="center">Sobre Mi</a>
+        <a class="selected" href="formulario.html" target="center">Formulario</a>
       </p>
-      <p>
-        <label for="edad">Fecha de Nacimiento: </label>
-        <input type="date" id="edad">
-      </p>
-      <p>Estado Civil:</p>
-      <p>
-        <label for="casado">Casado: </label>
-        <input type="radio" name="Estado" id="casado">
-        <label for="soltero">Soltero: </label>
-        <input type="radio" name="Estado" id="soltero">
-      </p>
-    </fieldset>
-    <fieldset>
-      <legend align="center">Profesional y Estudios</legend>
-      <p>
-        <label for="estudios">Titulo Academico más alto</label>
-        <select id="estudios">
-          <option value="null" selected> </option>
-          <option value="eso">E.S.O.</option>
-          <option value="fpb">F.P. Basica</option>
-          <option value="fpm">F.P. Grado Medio</option>
-          <option value="bach">Bachillerato</option>
-          <option value="fps">F.P. Grado Superior</option>
-          <option value="uni">Carrera Universitaria</option>
-          <option value="master">Master</option>
-          <option value="doctor">Doctorado</option>
-        </select>
-      </p>
-      <p>
-        <label for="estudios2"></label>
-      </p>
-    </fieldset>
-  </form>
-  
+    </nav>
+  </header>
+  <main class="formulario">
+    <form action="get">
+      <fieldset>
+        <legend class="center">Personal</legend>
+        <p>
+          <label for="nombre">Nombre: </label>
+          <input type="text" id="nombre" required>
+        </p>
+        <p>
+          <label for="apellidos">Apellidos: </label>
+          <input type="text" id="apellidos" required>
+        </p>
+        <p>
+          <label for="edad">Fecha de Nacimiento: </label>
+          <input type="date" id="edad" required>
+        </p>
+        <p>Estado Civil:</p>
+        <p>
+          <label for="casado">Casado: </label>
+          <input type="radio" name="Estado" id="casado" required>
+          <label for="soltero">Soltero: </label>
+          <input type="radio" name="Estado" id="soltero" readonly>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend class="center">Profesional y Estudios</legend>
+        <p>
+          <label for="estudios">Titulo Academico más alto</label>
+          <select id="estudios" required>
+            <option value="null" selected> </option>
+            <option value="eso">E.S.O.</option>
+            <option value="fpb">F.P. Basica</option>
+            <option value="fpm">F.P. Grado Medio</option>
+            <option value="bach">Bachillerato</option>
+            <option value="fps">F.P. Grado Superior</option>
+            <option value="uni">Carrera Universitaria</option>
+            <option value="master">Master</option>
+            <option value="doctor">Doctorado</option>
+          </select>
+        </p>
+        <p>
+          <label for="estudios2">(En caso de FP, Masters o Carreras) Especifique que campo a cursado</label>
+          <input type="text" id="estudios2">
+        </p>
+        <p>
+          ¿Ha trabajado alguna vez?
+          <p>
+          <label for="trabajadoYes">SI</label>
+          <input type="radio" name="trabajado" id="trabajadoYes" value="true">
+          <label for="trabajadoNo">NO</label>
+          <input type="radio" name="trabajado" id="trabajadoNo" value="false">
+          </p>
+        </p>
+        <p>
+          ¿Estas trabajando actualmente?
+          <div>
+            <label for="trabajandoYes">SI</label>
+            <input type="radio" id="trabajandoYes" name="trabajando" value="true">
+            <label for="trabajandoNo">NO</label>
+            <input type="radio" name="trabajando" id="trabajandoNo" value="false">
+          </div>
+        </p>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <p>
+      Marcos Mañanes Ruiz - 2ºSMRC | Aplicaciones Web
+    </p>
+  </footer>
 </body>
 </html>
