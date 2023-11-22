@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: url(/img/background3.jpeg);
+  background-size: cover;
+}
+header {
+  background-image: url(/img/red-background-6972418_1280.png);
+  top: 0;
+  background-size: cover;
+  padding-bottom: 0.1%;
+  padding-top: 0.1%;
+  border-radius: 20px;
+  border-color: black;
+  border-style:solid;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+header a.boton {
+  margin: 0% 5%;
+  animation-name: textZoomOut;
+  animation-duration: 500ms;
+}
+header a.boton:link {
+  color: white;
+  text-decoration: none;
+}
+header a.boton:visited {
+  color: white;
+}
+header a.boton:visited:hover {
+  background-color: white;
+  color: firebrick;
+  text-decoration: underline;
+  border-radius: 5%;
+}
+header a.boton:link:hover {
+  animation-name: textZoomIn;
+  animation-duration: 500ms;
+  background-color: white;
+  color: firebrick;
+  text-decoration: underline;
+  border-radius: 5%;
+  font-size: larger;
+}
+header a.selected {
+  margin: 0% 5%;
+  background-color: white;
+  color: firebrick;
+  text-decoration: underline;
+  border-radius: 5%;
+  font-size: larger;
+}
+@keyframes textZoomIn {
+  from {
+    font-size: medium;
+  }
+  to {
+    font-size: larger;
+  }
+}
+@keyframes textZoomOut {
+  from {
+    font-size: larger;
+  }
+  to {
+    font-size: medium;
+  }
+}
+header p {
+  text-align: center;
+}
+main fieldset {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 80%;
+}
+main.personal {
+  font-size: large
+}
+h1.tituloPersonal {
+  display: inline;
+  position: static;
+  text-align: center;
+  border-radius: 20px;
+  background-color: lightblue;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main.personal img {
+  float: right;
+}
+main.personal .subtitulo {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+main.personal .yt {
+  list-style-image: url(/img/youtube.png);
+}
+main.formulario fieldset {
+  margin-bottom: 1%;
+}
+th p {
+  background-color: white;
+  border: 2px black solid;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+td p {
+  border-bottom: 2px black solid;
+}
+main.curriculum table th {
+  border-right-width: 5px ;
+  border-right-color: black;
+  border-right-style: solid;
+  padding: 4%;
+  margin-right: 30%;
+}
+main.curriculum table td {
+  border-right-width: 5px ;
+  border-right-color: black;
+  border-right-style: solid;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+legend.center {
+  background-color: white;
+  border-style: outset;
+  border-color: black;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+legend {
+  background-color: white;
+  border-style: outset;
+  border-color: black;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+footer {
+  background-color: gray;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+  padding: 5px 5px 5px 5px;
+  bottom: 0px;
+  width: 100%;
+  left: 0;
+  font-style: italic;
+}
+div.centrarTitulo {
+  text-align: center;
+}
+span.bold {
+  font-weight: bolder;
+}
+img.curriculum {
+  float: right;
+  height: 15%;
+  width: 15%;
+}
+div.gustos {
+  display: flex;
+}
+div.gusto1 {
+  position: relative;
+  width: 20%;
+  left: 2%;
+}
+div.gusto2 {
+  position: relative;
+  width: 20%;
+  left: 12%;
+}
+div.gusto3 {
+  position: relative;
+  width: 20%;
+  left: 22%;
+}
+li.cositas {
+  list-style-type: square;
+  font-style: oblique;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+aside {
+  float: right;
+  position: relative;
+  top: 10%;
+}
+aside fieldset {
+  top: 10%;
+}
