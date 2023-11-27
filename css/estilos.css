@@ -9,11 +9,16 @@ body {
 header {
   background-image: url(/img/red-background-6972418_1280.png);
   top: 0;
+  position: fixed;
+  z-index: 1000;
+  width: 99%;
   background-size: cover;
   padding-bottom: 0.1%;
   padding-top: 0.1%;
-  border-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   border-color: black;
+  border-top-width: 0;
   border-style:solid;
   margin-bottom: 10px;
   margin-top: 0;
@@ -72,9 +77,12 @@ header a.selected {
 header p {
   text-align: center;
 }
-main fieldset {
+fieldset {
   background-color: rgba(255, 255, 255, 0.5);
   width: 80%;
+}
+main {
+  margin-top: 6%;
 }
 main.personal {
   font-size: large
@@ -94,8 +102,9 @@ h1.tituloPersonal {
 main.personal img {
   float: right;
 }
-main.personal .subtitulo {
-  font-weight: bolder;
+p.subtitulo {
+  font-weight: bold;
+  font-size: x-large;
   text-decoration: underline;
 }
 main.personal .yt {
@@ -191,11 +200,46 @@ li.cositas {
   text-decoration: underline;
   font-weight: bolder;
 }
+
+li.redes {
+  margin-bottom: 20px;
+  font-size: large;
+}
 aside {
   float: right;
-  position: relative;
+  position: sticky;
   top: 10%;
+  width: 19%;
+  height: 100%;
 }
-aside fieldset {
-  top: 10%;
+aside div{
+  padding-left: 1%;
+}
+fieldset.redes {
+  text-align: center;
+}
+a.redes:link {
+  font-size: large;
+  color: black;
+  text-decoration: none;
+}
+a.redes:link:hover {
+  text-decoration: underline;
+}
+a.redes:visited {
+  font-size: large;
+  color: black;
+  text-decoration: none;
+}
+a.redes:visited:hover {
+  font-size: large;
+  color: black;
+  text-decoration: none;
+}
+div.fotoDisplay {
+  text-align: center;
+  font-style: italic;
+}
+main.pagina fieldset {
+  margin-bottom: 35%;
 }
