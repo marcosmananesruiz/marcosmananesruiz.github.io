@@ -49,23 +49,22 @@
         <p><label for="nombre">Nombre:* </label></p>
         <input type="text" id="nombre" required>
         <p><label for="apellidos">Apellidos:* </label></p>
-        <input type="text" id="apellidos"  width="150px" required>
+        <input type="text" id="apellidos" required>
         <p><label for="edad">Edad</label></p>
         <input type="number" id="edad">
         <p><label for="email">Correo Electronico:* </label></p>
-        <input type="email" id="email" required>
+        <input type="email" id="email" required size="35">
         <p><label for="tel">Nº de Teléfono:</label></p>
         <input type="tel" id="tel">
         <p><label for="fecha">Seleccione Fecha para la Reunion:*</label></p>
         <input type="date" id="fecha" required>
         <p><label for="time">Hora de la reunion:*</label></p>
-        <input type="time" name id="">
+        <input type="time" id="time">
         <p><label for="priority">Prioridad de la reuinion:</label></p>
         <input type="range" id="priority">
         <p>
-          <label for="motivo">Motivo de la Reunion:*</label>
-          <select id="motivo" required>
-            <option value="null" selected> </option>
+          <label for="motivo">Motivo de la Reunion:</label>
+          <select id="motivo">
             <option value="entrevista">Entrevista</option>
             <option value="duda">Duda sobre producto</option>
             <option value="prop">Propuesta de Proyecto</option>
@@ -80,10 +79,8 @@
         <input type="radio" name="extra" id="extraNo" value="false" required>
         <p>Archivos de relevancia con respecto a la reunion:</p>
         <input type="file">
-        <p>
-          <p>Datos extra sobre la Reunion:*</p>
-          <textarea id="meeting" cols="30" rows="10" placeholder="Esriba aqui el motivo de la reunion" required></textarea>
-        </p>
+        <p>Datos extra sobre la Reunion:*</p>
+        <textarea id="meeting" cols="30" rows="10" placeholder="Esriba aqui el motivo de la reunion" required></textarea>
         <p>
           <label for="terms">He leido y acepto los <a href="https://youtu.be/2Ufge60nqoc">terminos y condiciones de uso</a></label>
           <input type="checkbox" id="terms" required>

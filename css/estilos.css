@@ -202,11 +202,13 @@ div.gusto3 {
   margin: 0;
 
 }
-li.cositas {
-  list-style-type: square;
+.cositas {
   font-style: oblique;
   text-decoration: underline;
   font-weight: bolder;
+}
+ul.cosas {
+  list-style-type: square;
 }
 
 li.redes {
