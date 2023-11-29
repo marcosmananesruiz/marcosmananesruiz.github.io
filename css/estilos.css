@@ -84,7 +84,7 @@ fieldset {
 main {
   margin-top: 6%;
 }
-main.personal {
+#personal {
   font-size: large
 }
 h1.tituloPersonal {
@@ -98,19 +98,29 @@ h1.tituloPersonal {
   border-style: solid;
   padding-left: 20px;
   padding-right: 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 10px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: large;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
 }
-main.personal img {
+#personal img.mifoto {
   float: right;
+  height: 224px;
+  width: 256px;
 }
 p.subtitulo {
   font-weight: bold;
   font-size: x-large;
   text-decoration: underline;
 }
-main.personal .yt {
+#personal .yt {
   list-style-image: url(/img/youtube.png);
 }
-main.formulario fieldset {
+#formulario fieldset {
   margin-bottom: 1%;
 }
 th p {
@@ -122,20 +132,18 @@ th p {
 td p {
   border-bottom: 2px black solid;
 }
-main.curriculum table th {
+#curriculum table th {
   border-right-width: 5px ;
   border-right-color: black;
   border-right-style: solid;
   padding: 4%;
   margin-right: 30%;
 }
-main.curriculum table td {
-  border-right-width: 5px ;
-  border-right-color: black;
-  border-right-style: solid;
+#curriculum table td {
+  border-right: black 5px solid ;
   padding-left: 10%;
-  padding-right: 10%;
-}
+  padding-right: 10%;}
+  
 legend.center {
   background-color: white;
   border-style: outset;
@@ -171,28 +179,28 @@ div.centrarTitulo {
 span.bold {
   font-weight: bolder;
 }
+p.top {
+  margin: 0;
+}
 img.curriculum {
   float: right;
   height: 15%;
   width: 15%;
 }
 div.gustos {
-  display: flex;
+  column-count: 3;
+  break-after: column;
 }
 div.gusto1 {
-  position: relative;
-  width: 20%;
-  left: 2%;
+  margin: 0;
+
 }
 div.gusto2 {
-  position: relative;
-  width: 20%;
-  left: 12%;
+  margin: 0;
 }
 div.gusto3 {
-  position: relative;
-  width: 20%;
-  left: 22%;
+  margin: 0;
+
 }
 li.cositas {
   list-style-type: square;
@@ -210,7 +218,7 @@ aside {
   position: sticky;
   top: 10%;
   width: 19%;
-  height: 100%;
+  height: 95%;
 }
 aside div{
   padding-left: 1%;
@@ -240,6 +248,10 @@ div.fotoDisplay {
   text-align: center;
   font-style: italic;
 }
-main.pagina fieldset {
+#pagina fieldset {
   margin-bottom: 35%;
+}
+input.buttonDelete {
+  width: 15px;
+  height: 15px;
 }

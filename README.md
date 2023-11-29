@@ -1,2 +1,2 @@
 # marcosmananesruiz.github.io
-Proyecto Primer trimestre Aplicaciones Web
+Proyecto Primer Trimestre Aplicaciones Web
