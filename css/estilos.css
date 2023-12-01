@@ -189,18 +189,16 @@ img.curriculum {
 }
 div.gustos {
   column-count: 3;
-  break-after: column;
+  break-after:auto;
 }
 div.gusto1 {
   margin: 0;
-
 }
 div.gusto2 {
   margin: 0;
 }
 div.gusto3 {
   margin: 0;
-
 }
 .cositas {
   font-style: oblique;
