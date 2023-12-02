@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: url(../img/background3.jpeg);
+  background-size: cover;
+}
+header {
+  background-image: url(../img/red-background-6972418_1280.png);
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+  width: 99%;
+  background-size: cover;
+  padding-bottom: 0.1%;
+  padding-top: 0.1%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-color: black;
+  border-top-width: 0;
+  border-style:solid;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+header a.boton {
+  margin: 0% 5%;
+  animation-name: textZoomOut;
+  animation-duration: 500ms;
+}
+header a.boton:link {
+  color: white;
+  text-decoration: none;
+}
+header a.boton:visited {
+  color: white;
+}
+header a.boton:visited:hover {
+  background-color: white;
+  color: firebrick;
+  text-decoration: underline;
+  border-radius: 5%;
+}
+header a.boton:link:hover {
+  animation-name: textZoomIn;
+  animation-duration: 500ms;
+  background-color: white;
+  color: firebrick;
+  text-decoration: underline;
+  border-radius: 5%;
+  font-size: larger;
+}
+header a.selected {
+  margin: 0% 5%;
+  background-color: white;
+  color: firebrick;
+  text-decoration: underline;
+  border-radius: 5%;
+  font-size: larger;
+}
+@keyframes textZoomIn {
+  from {
+    font-size: medium;
+  }
+  to {
+    font-size: larger;
+  }
+}
+@keyframes textZoomOut {
+  from {
+    font-size: larger;
+  }
+  to {
+    font-size: medium;
+  }
+}
+header p {
+  text-align: center;
+}
+fieldset {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 80%;
+}
+main {
+  margin-top: 6%;
+}
+#personal {
+  font-size: large
+}
+h1.tituloPersonal {
+  display: inline;
+  position: static;
+  text-align: center;
+  border-radius: 20px;
+  background-color: lightblue;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-justify: auto;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: large;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+}
+#personal img.mifoto {
+  float: right;
+  height: 224px;
+  width: 256px;
+}
+p.subtitulo {
+  font-weight: bold;
+  font-size: x-large;
+  text-decoration: underline;
+}
+#personal .yt {
+  list-style-image: url(../img/youtube.png);
+}
+#formulario fieldset {
+  margin-bottom: 1%;
+}
+th p {
+  background-color: white;
+  border: 2px black solid;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+td p {
+  border-bottom: 2px black solid;
+}
+#curriculum table th {
+  border-right-width: 5px ;
+  border-right-color: black;
+  border-right-style: solid;
+  padding: 4%;
+}
+#curriculum table td {
+  border-right: black 5px solid ;
+  padding-left: 10%;
+  padding-right: 10%;}
+  
+legend.center {
+  background-color: white;
+  border-style: outset;
+  border-color: black;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+legend {
+  background-color: white;
+  border-style: outset;
+  border-color: black;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+footer {
+  background-color: gray;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+  padding: 5px 5px 5px 5px;
+  bottom: 0px;
+  width: 100%;
+  left: 0;
+  font-style: italic;
+}
+div.centrarTitulo {
+  text-align: center;
+}
+span.bold {
+  font-weight: bolder;
+}
+p.top {
+  margin: 0;
+}
+img.curriculum {
+  float: right;
+  height: 15%;
+  width: 15%;
+}
+div.gustos {
+  column-count: 3;
+  break-after:auto;
+}
+div.gusto1 {
+  margin: 0;
+}
+div.gusto2 {
+  margin: 0;
+}
+div.gusto3 {
+  margin: 0;
+}
+.cositas {
+  font-style: oblique;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+ul.cosas {
+  list-style-type: square;
+}
+
+li.redes {
+  margin-bottom: 20px;
+  font-size: large;
+}
+aside {
+  float: right;
+  position: sticky;
+  top: 10%;
+  width: 19%;
+  height: 95%;
+}
+aside div{
+  padding-left: 1%;
+}
+fieldset.redes {
+  text-align: center;
+}
+a.redes:link {
+  font-size: large;
+  color: black;
+  text-decoration: none;
+}
+a.redes:link:hover {
+  text-decoration: underline;
+}
+a.redes:visited {
+  font-size: large;
+  color: black;
+  text-decoration: none;
+}
+a.redes:visited:hover {
+  font-size: large;
+  color: black;
+  text-decoration: none;
+}
+div.fotoDisplay {
+  text-align: center;
+  font-style: italic;
+}
+#pagina fieldset {
+  margin-bottom: 35%;
+}
+input.buttonDelete {
+  width: 15px;
+  height: 15px;
+}
